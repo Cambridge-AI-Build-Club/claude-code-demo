@@ -1,6 +1,6 @@
-# cbc-demo
+# claude-code-demo
 
-The Claude Builder Club @ Cambridge events page, used in Workshop 3: *Exploring Claude Code with Technical Details* (Saturday 21 November 2026).
+The Claude Builder Club @ Cambridge events page: the demo project for our Claude Code workshops, first used in Workshop 3, *Exploring Claude Code with Technical Details* (Saturday 21 November 2026).
 
 The site is three plain files (`index.html`, `style.css`, `app.js`) and one list of events (`events.js`), with tests in `events.test.js`. The interesting part is the `.claude` folder, which has one working example of each Claude Code feature:
 
@@ -27,8 +27,8 @@ CLAUDE.md                          instructions for every session (shared)
 You need [Claude Code](https://code.claude.com/docs) and Node.js 18 or later.
 
 ```bash
-git clone https://github.com/sileneer/cbc-demo.git
-cd cbc-demo
+git clone https://github.com/sileneer/claude-code-demo.git
+cd claude-code-demo
 node --test
 claude
 ```

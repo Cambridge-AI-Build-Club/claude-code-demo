@@ -27,7 +27,7 @@ CLAUDE.md                          instructions for every session (shared)
 You need [Claude Code](https://code.claude.com/docs) and Node.js 18 or later.
 
 ```bash
-git clone https://github.com/sileneer/claude-code-demo.git
+git clone https://github.com/Cambridge-AI-Build-Club/claude-code-demo.git
 cd claude-code-demo
 node --test
 claude

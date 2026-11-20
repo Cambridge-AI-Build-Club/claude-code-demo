@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": ["Bash(node --test:*)", "Bash(git status:*)", "Bash(git diff:*)", "Bash(git show:*)"],
+    "ask": ["Bash(git push:*)"],
+    "deny": ["Read(./.env)"]
+  },
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [ { "type": "command", "command": "node .claude/hooks/next-event.js" } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Edit|Write", "hooks": [ { "type": "command", "command": "node .claude/hooks/protect-files.js" } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": "Edit|Write", "hooks": [ { "type": "command", "command": "node .claude/hooks/run-tests.js" } ] }
+    ]
+  }
+}
